@@ -1,0 +1,43 @@
+.header{
+    background-color: #fff;
+}
+.header .header-top span{
+    padding: 60px;
+    line-height:50px;
+}
+.header .header-top{
+    text-align: right;
+    height:50px;
+    line-height: 40px;
+    padding: 0 15px;
+}
+.header .breadcrumb{
+    text-align: right;
+    height:40px;
+    line-height: 40px;
+    padding: 0 15px;
+    border-top: 2px solid #1890ff
+}
+.header .breadcrumb .breadcrumb-title{
+    text-align: center;
+    font-size: 18px;
+}
+.header .breadcrumb .breadcrumb-title:after{
+    /* 三角形 */
+    position: absolute;
+    content:'';
+    left:85px;
+    top:37px;
+    border-top:10px solid #fff;
+    border-left:12px solid transparent;
+    border-right: 12px solid transparent;
+}
+
+.header .breadcrumb .time .date{
+    margin-right: 30px;
+}
+.header .breadcrumb .time .weatherimg{
+    margin-top: 5px;
+    width:20px;
+    height:20px;
+}

@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="shortcut icon" href="%PUBLIC_URL%/favicon.ico" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta name="theme-color" content="#000000" />
+    <!--
+      manifest.json provides metadata used when your web app is installed on a
+      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
+    -->
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+    <link rel="stylesheet" href="./style.css">
+    <!--
+      Notice the use of %PUBLIC_URL% in the tags above.
+      It will be replaced with the URL of the `public` folder during the build.
+      Only files inside the `public` folder can be referenced from the HTML.
+
+      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
+      work correctly both with client-side routing and a non-root public URL.
+      Learn how to configure a non-root public URL by running `npm run build`.
+    -->
+    <title>测试管理平台</title>
+    <!-- 引入百度Map文件 -->
+    
+    <script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=XKLMI25z6EntbFRGwP9xaKU2KGCTkgA6"></script>
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no" />  
+  </head>
+  <body>
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div id="root"></div>
+    <!--
+      This HTML file is a template.
+      If you open it directly in the browser, you will see an empty page.
+
+      You can add webfonts, meta tags, or analytics to this file.
+      The build step will place the bundled scripts into the <body> tag.
+
+      To begin the development, run `npm start` or `yarn start`.
+      To create a production bundle, use `npm run build` or `yarn build`.
+    -->
+    <!-- loading动画 -->
+		<div class="socket" id="socket" style="display:none">
+			<div class="Text">加载中</div>
+	<div class="gel center-gel">
+		<div class="hex-brick h1"></div>
+		<div class="hex-brick h2"></div>
+		<div class="hex-brick h3"></div>
+		
+	</div>
+	<div class="gel c1 r1">
+		<div class="hex-brick h1"></div>
+		<div class="hex-brick h2"></div>
+		<div class="hex-brick h3"></div>
+	</div>
+	<div class="gel c2 r1">
+		<div class="hex-brick h1"></div>
+		<div class="hex-brick h2"></div>
+		<div class="hex-brick h3"></div>
+	</div>
+	<div class="gel c3 r1">
+		<div class="hex-brick h1"></div>
+		<div class="hex-brick h2"></div>
+		<div class="hex-brick h3"></div>
+	</div>
+	<div class="gel c4 r1">
+		<div class="hex-brick h1"></div>
+		<div class="hex-brick h2"></div>
+		<div class="hex-brick h3"></div>
+	</div>
+	<div class="gel c5 r1">
+		<div class="hex-brick h1"></div>
+		<div class="hex-brick h2"></div>
+		<div class="hex-brick h3"></div>
+	</div>
+	<div class="gel c6 r1">
+		<div class="hex-brick h1"></div>
+		<div class="hex-brick h2"></div>
+		<div class="hex-brick h3"></div>
+	</div>
+	
+	<div class="gel c7 r2">
+		<div class="hex-brick h1"></div>
+		<div class="hex-brick h2"></div>
+		<div class="hex-brick h3"></div>
+	</div>
+	
+	<div class="gel c8 r2">
+		<div class="hex-brick h1"></div>
+		<div class="hex-brick h2"></div>
+		<div class="hex-brick h3"></div>
+	</div>
+	<div class="gel c9 r2">
+		<div class="hex-brick h1"></div>
+		<div class="hex-brick h2"></div>
+		<div class="hex-brick h3"></div>
+	</div>
+	<div class="gel c10 r2">
+		<div class="hex-brick h1"></div>
+		<div class="hex-brick h2"></div>
+		<div class="hex-brick h3"></div>
+	</div>
+	<div class="gel c11 r2">
+		<div class="hex-brick h1"></div>
+		<div class="hex-brick h2"></div>
+		<div class="hex-brick h3"></div>
+	</div>
+	<div class="gel c12 r2">
+		<div class="hex-brick h1"></div>
+		<div class="hex-brick h2"></div>
+		<div class="hex-brick h3"></div>
+	</div>
+	<div class="gel c13 r2">
+		<div class="hex-brick h1"></div>
+		<div class="hex-brick h2"></div>
+		<div class="hex-brick h3"></div>
+	</div>
+	<div class="gel c14 r2">
+		<div class="hex-brick h1"></div>
+		<div class="hex-brick h2"></div>
+		<div class="hex-brick h3"></div>
+	</div>
+	<div class="gel c15 r2">
+		<div class="hex-brick h1"></div>
+		<div class="hex-brick h2"></div>
+		<div class="hex-brick h3"></div>
+	</div>
+	<div class="gel c16 r2">
+		<div class="hex-brick h1"></div>
+		<div class="hex-brick h2"></div>
+		<div class="hex-brick h3"></div>
+	</div>
+	<div class="gel c17 r2">
+		<div class="hex-brick h1"></div>
+		<div class="hex-brick h2"></div>
+		<div class="hex-brick h3"></div>
+	</div>
+	<div class="gel c18 r2">
+		<div class="hex-brick h1"></div>
+		<div class="hex-brick h2"></div>
+		<div class="hex-brick h3"></div>
+	</div>
+	<div class="gel c19 r3">
+		<div class="hex-brick h1"></div>
+		<div class="hex-brick h2"></div>
+		<div class="hex-brick h3"></div>
+	</div>
+	<div class="gel c20 r3">
+		<div class="hex-brick h1"></div>
+		<div class="hex-brick h2"></div>
+		<div class="hex-brick h3"></div>
+	</div>
+	<div class="gel c21 r3">
+		<div class="hex-brick h1"></div>
+		<div class="hex-brick h2"></div>
+		<div class="hex-brick h3"></div>
+	</div>
+	<div class="gel c22 r3">
+		<div class="hex-brick h1"></div>
+		<div class="hex-brick h2"></div>
+		<div class="hex-brick h3"></div>
+	</div>
+	<div class="gel c23 r3">
+		<div class="hex-brick h1"></div>
+		<div class="hex-brick h2"></div>
+		<div class="hex-brick h3"></div>
+	</div>
+	<div class="gel c24 r3">
+		<div class="hex-brick h1"></div>
+		<div class="hex-brick h2"></div>
+		<div class="hex-brick h3"></div>
+	</div>
+	<div class="gel c25 r3">
+		<div class="hex-brick h1"></div>
+		<div class="hex-brick h2"></div>
+		<div class="hex-brick h3"></div>
+	</div>
+	<div class="gel c26 r3">
+		<div class="hex-brick h1"></div>
+		<div class="hex-brick h2"></div>
+		<div class="hex-brick h3"></div>
+	</div>
+	<div class="gel c28 r3">
+		<div class="hex-brick h1"></div>
+		<div class="hex-brick h2"></div>
+		<div class="hex-brick h3"></div>
+	</div>
+	<div class="gel c29 r3">
+		<div class="hex-brick h1"></div>
+		<div class="hex-brick h2"></div>
+		<div class="hex-brick h3"></div>
+	</div>
+	<div class="gel c30 r3">
+		<div class="hex-brick h1"></div>
+		<div class="hex-brick h2"></div>
+		<div class="hex-brick h3"></div>
+	</div>
+	<div class="gel c31 r3">
+		<div class="hex-brick h1"></div>
+		<div class="hex-brick h2"></div>
+		<div class="hex-brick h3"></div>
+	</div>
+	<div class="gel c32 r3">
+		<div class="hex-brick h1"></div>
+		<div class="hex-brick h2"></div>
+		<div class="hex-brick h3"></div>
+	</div>
+	<div class="gel c33 r3">
+		<div class="hex-brick h1"></div>
+		<div class="hex-brick h2"></div>
+		<div class="hex-brick h3"></div>
+	</div>
+	<div class="gel c34 r3">
+		<div class="hex-brick h1"></div>
+		<div class="hex-brick h2"></div>
+		<div class="hex-brick h3"></div>
+	</div>
+	<div class="gel c35 r3">
+		<div class="hex-brick h1"></div>
+		<div class="hex-brick h2"></div>
+		<div class="hex-brick h3"></div>
+	</div>
+	<div class="gel c36 r3">
+		<div class="hex-brick h1"></div>
+		<div class="hex-brick h2"></div>
+		<div class="hex-brick h3"></div>
+	</div>
+	<div class="gel c37 r3">
+		<div class="hex-brick h1"></div>
+		<div class="hex-brick h2"></div>
+		<div class="hex-brick h3"></div>
+	</div>
+    </div>
+    <!-- loading动画 -->
+  </body>
+</html>

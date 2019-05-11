@@ -1,0 +1,22 @@
+
+
+.logo{
+    margin-left:-10px; 
+    line-height: 80px;
+    background-color: #002140;
+    text-align:center
+}
+img{
+    margin-bottom:10px;
+    height: 40px;
+    width: 40px;
+    vertical-align: middle;
+
+}
+h1{
+    margin: 10px 0 0 0px;
+    display: inline-block;
+    color: aliceblue;
+    font-size: 22px;
+    font-weight: bold
+}

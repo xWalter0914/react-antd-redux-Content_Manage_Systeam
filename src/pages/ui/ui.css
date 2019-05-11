@@ -1,0 +1,37 @@
+/* 全局按钮 */
+Button{
+    margin-right: 10px;
+}
+/* modals居中 */
+.vertical-center{
+    text-align: center;
+    white-space:nowrap;
+}
+
+.vertical-center:before{
+    content: '';
+    display: inline-block;
+    height: 25%;
+    vertical-align: middle;
+    width: 0;
+}
+/* carousel文字轮播 */
+.ant-carousel .slick-slide {
+    text-align: center;
+    height: 160px;
+    line-height: 160px;
+    background: #364d79;
+    overflow: hidden;
+  }
+  .ant-carousel .slick-slide h3 {
+    color: #fff;
+  }
+  /* carousel图片轮播 */
+  .silder-wrap .ant-carousel .slick-slide{
+    height:555px!important;
+    overflow: hidden;
+  }
+
+  .card-wrap{
+    border-bottom: 10px;
+  }
