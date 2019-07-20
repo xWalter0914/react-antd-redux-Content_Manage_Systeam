@@ -1,7 +1,16 @@
-#安装
+# 安装 
+``` 
 npm install
-或 yarn install
-
-#运行
+```
+或
+```
+yarn install
+```
+# 运行
+```
 npm start
-或 yarn start
+```
+或 
+```
+yarn start
+```
